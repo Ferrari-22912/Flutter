@@ -1,0 +1,7 @@
+project_id = "three-bhai"
+
+[functions.find-recipes]
+verify_jwt = true
+
+[functions.chef-chat]
+verify_jwt = true

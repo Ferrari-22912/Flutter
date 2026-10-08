@@ -1,0 +1,38 @@
+name: three_bhai
+description: 3Bhai - generate recipes from the ingredients you already have.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.0
+  equatable: ^2.0.7
+  google_fonts: ^6.2.1
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
+  supabase_flutter: ^2.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+# Regenerates Android + iOS launcher icons from the 3Bhai logo:
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/branding/app_icon.png"
+  adaptive_icon_background: "#FF4E1B"
+  adaptive_icon_foreground: "assets/branding/app_icon_foreground.png"
+  remove_alpha_ios: true
