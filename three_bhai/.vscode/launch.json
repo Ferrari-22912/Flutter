@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "3Bhai - demo mode (no Supabase)",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "3Bhai - with Supabase (env/dev.json)",
+      "request": "launch",
+      "type": "dart",
+      "toolArgs": ["--dart-define-from-file=env/dev.json"]
+    },
+    {
+      "name": "3Bhai - release on phone (env/dev.json)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "toolArgs": ["--dart-define-from-file=env/dev.json"]
+    }
+  ]
+}

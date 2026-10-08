@@ -1,0 +1,27 @@
+.DS_Store
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+pubspec.lock
+.idea/
+*.iml
+.flutter-plugins
+.flutter-plugins-dependencies
+/android/.gradle/
+/android/local.properties
+/android/key.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+**/Pods/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+
+# Local secrets (never commit)
+/env/*.json
+!/env/*.example.json
+/supabase/.env
+/supabase/.temp/

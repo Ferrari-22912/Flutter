@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build APK (release, with Supabase)",
+      "type": "shell",
+      "command": "flutter build apk --release --dart-define-from-file=env/dev.json",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build APK (release, demo mode)",
+      "type": "shell",
+      "command": "flutter build apk --release",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install APK on phone over USB",
+      "type": "shell",
+      "command": "adb install -r build/app/outputs/flutter-apk/app-release.apk",
+      "problemMatcher": []
+    }
+  ]
+}
